@@ -14,7 +14,7 @@ export default function Footer() {
              className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/valrite-ehachi-a4714a397/" target="_blank" rel="noopener noreferrer"
              className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200">
             LinkedIn
           </a>

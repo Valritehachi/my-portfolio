@@ -25,7 +25,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/valrite-ehachi-a4714a397/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200"

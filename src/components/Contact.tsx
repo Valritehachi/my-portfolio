@@ -11,10 +11,10 @@ export default function Contact() {
 
         <div className="flex flex-wrap items-center gap-6">
           <a
-            href="mailto:valritehavhi@gmail.com"
+            href="mailto:valritehachi@gmail.com"
             className="text-slate-400 hover:text-emerald-400 text-sm transition-colors duration-200"
           >
-            valritehavhi@gmail.com
+            valritehachi@gmail.com
           </a>
           <a
             href="https://github.com/Valritehachi"

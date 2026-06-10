@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const stats = [
-  { value: "250+", label: "TEST CASES", color: "text-emerald-400", border: "border-l-emerald-500", bg: "bg-emerald-950/40" },
-  { value: "95%",  label: "COVERAGE",   color: "text-blue-400",    border: "border-l-blue-500",    bg: "bg-blue-950/40"   },
-  { value: "60%",  label: "FASTER",     color: "text-orange-400",  border: "border-l-orange-500",  bg: "bg-orange-950/40" },
-  { value: "3+",   label: "YRS EXP",    color: "text-purple-400",  border: "border-l-purple-500",  bg: "bg-purple-950/40" },
+  { value: "250+", label: "TEST CASES" },
+  { value: "95%",  label: "COVERAGE"   },
+  { value: "60%",  label: "FASTER"     },
+  { value: "3+",   label: "YRS EXP"    },
 ];
 
 export default function Hero() {
@@ -27,9 +27,7 @@ export default function Hero() {
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
           QA Automation<br />
-          <span className="cursor text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400">
-            Engineer
-          </span>
+          <span className="cursor">Engineer</span>
         </h1>
 
         {/* Subtitle */}
@@ -61,9 +59,9 @@ export default function Hero() {
           {stats.map((s) => (
             <div
               key={s.label}
-              className={`${s.bg} border border-slate-800 border-l-2 ${s.border} p-5 flex flex-col gap-2 hover:border-slate-700 transition-colors duration-200`}
+              className="bg-slate-900/50 border border-slate-800 p-5 flex flex-col gap-2 hover:border-slate-600 transition-colors duration-200"
             >
-              <span className={`text-4xl font-bold ${s.color}`}>{s.value}</span>
+              <span className="text-4xl font-bold text-white">{s.value}</span>
               <span className="text-slate-500 text-xs tracking-widest">{s.label}</span>
             </div>
           ))}

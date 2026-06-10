@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -20,11 +20,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${jetbrainsMono.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-[#0d1117] text-slate-200 antialiased">
-        <Navbar />
-        <main className="flex-1 pt-14">{children}</main>
-        <Footer />
+    <html lang="en" className={jetbrainsMono.variable}>
+      <body className="antialiased">
+        <Sidebar />
+        <div className="content-right">
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

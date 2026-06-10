@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d1117;
-  --foreground: #e2e8f0;
+  --background: #000;
+  --foreground: #fff;
 }
 
 @theme inline {
@@ -21,6 +21,28 @@ body {
   font-family: var(--font-jetbrains), "JetBrains Mono", "Fira Code", ui-monospace, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .content-right {
+    grid-column: 2 / 3;
+    margin-right: 10%;
+  }
 }
 
 @keyframes fadeInUp {

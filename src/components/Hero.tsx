@@ -18,17 +18,17 @@ export default function Hero() {
         <div className="blob-delay-2 absolute bottom-1/4 left-1/3 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-3xl">
         {/* Terminal prompt */}
         <p className="text-emerald-400 text-sm tracking-widest mb-5 animate-fade-in">
           &gt; VALRITE HAMILTON
         </p>
 
         {/* Heading */}
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white leading-none mb-6">
-          QA<br />
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          QA Automation<br />
           <span className="cursor text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400">
-            Tester
+            Engineer
           </span>
         </h1>
 

@@ -1,16 +1,15 @@
 export default function Contact() {
   return (
     <section id="contact" className="py-20 px-6 sm:px-10 lg:px-16 border-t border-slate-800/50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
           Get In Touch
         </h2>
-        <p className="text-slate-400 text-sm mb-10 max-w-xl">
-          I&apos;m currently open to new opportunities. Whether you have a
-          project in mind or just want to say hi — my inbox is always open.
+        <p className="text-slate-400 text-sm mb-10 leading-relaxed">
+          Whether you have a project in mind or a job position — my inbox is always open.
         </p>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center gap-6">
           <a
             href="mailto:valritehavhi@gmail.com"
             className="text-slate-400 hover:text-emerald-400 text-sm transition-colors duration-200"

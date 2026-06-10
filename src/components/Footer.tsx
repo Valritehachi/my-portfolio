@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center sm:items-start gap-1">
           <span className="text-emerald-400 text-sm font-bold tracking-wider">&gt; VALRITE HAMILTON</span>
-          <span className="text-slate-500 text-xs">QA Tester</span>
+          <span className="text-slate-500 text-xs">QA Automation Engineer</span>
         </div>
 
         <div className="flex items-center gap-8">

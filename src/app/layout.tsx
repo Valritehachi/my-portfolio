@@ -11,9 +11,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Valrite Hamilton — QA Tester",
+  title: "Valrite Hamilton — QA Automation Engineer",
   description:
-    "Portfolio of Valrite Hamilton — QA tester building intelligent testing platforms with Claude AI, Playwright, and PyTest.",
+    "Portfolio of Valrite Hamilton — QA automation engineer building intelligent testing platforms with Claude AI, Playwright, and PyTest.",
 };
 
 export default function RootLayout({

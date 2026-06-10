@@ -4,7 +4,7 @@ import { projects } from "@/lib/projects";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Projects — Valrite Hamilton | QA Tester",
+  title: "Projects — Valrite Hamilton | QA Automation Engineer",
   description: "Testing projects and automation platforms by Valrite Hamilton.",
 };
 

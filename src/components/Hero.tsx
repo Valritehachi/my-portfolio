@@ -1,84 +1,47 @@
-import Link from "next/link";
-
-const stats = [
-  { value: "250+", label: "TEST CASES" },
-  { value: "95%",  label: "COVERAGE"   },
-  { value: "60%",  label: "FASTER"     },
-  { value: "3+",   label: "YRS EXP"    },
-];
-
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-24 overflow-hidden">
-
-      {/* Animated background blobs */}
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="blob absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />
-        <div className="blob-delay absolute top-1/2 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="blob-delay-2 absolute bottom-1/4 left-1/3 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />
-      </div>
-
-      <div className="relative z-10 max-w-3xl">
-        {/* Terminal prompt */}
-        <p className="text-emerald-400 text-sm tracking-widest mb-5 animate-fade-in">
-          &gt; VALRITE HAMILTON
-        </p>
-
-        {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          QA Automation<br />
-          <span className="cursor">Engineer</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="text-slate-400 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl">
-          Building intelligent testing platforms with Claude AI.&nbsp;
-          250+ test cases &bull; 95% coverage &bull; 60% faster validation.
-        </p>
-
-        {/* CTA buttons */}
-        <div className="flex flex-wrap items-center gap-4 mb-20">
-          <Link
-            href="/projects"
-            className="px-7 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-sm transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:shadow-emerald-400/40"
-          >
-            See Projects
-          </Link>
-          <a
-            href="https://github.com/Valritehachi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-7 py-3 border border-emerald-500/60 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 font-bold text-sm transition-all duration-200"
-          >
-            GitHub →
-          </a>
-        </div>
-
-        {/* Stats grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
-          {stats.map((s) => (
-            <div
-              key={s.label}
-              className="bg-slate-900/50 border border-slate-800 p-5 flex flex-col gap-2 hover:border-slate-600 transition-colors duration-200"
-            >
-              <span className="text-4xl font-bold text-white">{s.value}</span>
-              <span className="text-slate-500 text-xs tracking-widest">{s.label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <a
-          href="#projects"
-          className="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-500 hover:border-emerald-500 hover:text-emerald-400 transition-all duration-200 animate-bounce"
+    <section
+      id="home"
+      className="relative h-screen"
+      style={{ paddingTop: "15%", paddingLeft: "6%", paddingRight: "4%" }}
+    >
+      {/* "Hi, I'm Valrite" + waving hand */}
+      <div className="flex items-start bg-black relative z-10">
+        <h1
+          className="text-white font-bold m-0"
+          style={{ fontSize: "4em", lineHeight: 1.15 }}
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </a>
+          Hi, I&apos;m Valrite
+        </h1>
+        <span
+          style={{
+            fontSize: "3em",
+            display: "inline-block",
+            animation: "wave 3s linear 0.5s infinite",
+            transformOrigin: "70% 70%",
+            paddingLeft: "14px",
+            lineHeight: 1.3,
+          }}
+        >
+          👋
+        </span>
       </div>
+
+      {/* "A QA Automation Engineer." — drops in with green colour */}
+      <p
+        className="hero-drop font-bold m-0"
+        style={{ fontSize: "4em", lineHeight: 1.2 }}
+      >
+        A QA Automation Engineer.
+      </p>
+
+      {/* Small subtitle */}
+      <p
+        className="font-bold"
+        style={{ color: "#8eaf8e", fontSize: "1em", paddingTop: "20px" }}
+      >
+        I build intelligent testing platforms and automated test suites.
+      </p>
     </section>
   );
 }

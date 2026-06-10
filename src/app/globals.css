@@ -50,6 +50,27 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes wave {
+  0%   { transform: rotate(0deg) }
+  10%  { transform: rotate(24deg) }
+  20%  { transform: rotate(-8deg) }
+  30%  { transform: rotate(14deg) }
+  40%  { transform: rotate(-8deg) }
+  50%  { transform: rotate(20deg) }
+  60%  { transform: rotate(0deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes heroDrop {
+  from { transform: translateY(-40px); opacity: 0; color: #fff; }
+  to   { transform: translateY(0); opacity: 1; color: #8eaf8e; }
+}
+
+.hero-drop {
+  animation: heroDrop 1.8s ease forwards;
+  opacity: 0;
+}
+
 @keyframes blink {
   0%, 49%  { opacity: 1; }
   50%, 100% { opacity: 0; }

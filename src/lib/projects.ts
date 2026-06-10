@@ -6,6 +6,8 @@ export interface Project {
   demo?: string;
   previewBg: string;
   titleColor: string;
+  accentBar: string;      // colored top strip on the card
+  accentGlow: string;     // hover shadow color
   codePreview?: string[];
   codeColor?: string;
 }
@@ -20,25 +22,8 @@ export const projects: Project[] = [
     demo: "https://virtual-qa.vercel.app",
     previewBg: "bg-white",
     titleColor: "text-emerald-400",
-  },
-  {
-    title: "ShipSticks Test Suite",
-    description:
-      "Comprehensive automated test suite for the ShipSticks booking platform. Collaborated with developers on the test runner architecture. Created end-to-end tests covering booking, payment, and shipping flows. Reduced regression testing time by 50%. Maintained a consistently high pass rate across 1,243 commits and 100+ test cases.",
-    tech: ["Playwright", "TypeScript"],
-    github: "https://github.com/assetfoundry/shipsticks_automated_tests",
-    previewBg: "bg-white",
-    titleColor: "text-teal-400",
-    codePreview: [
-      "$ npx playwright test --reporter=list",
-      "",
-      "  booking_flow.spec     ✓",
-      "  payment_flow.spec     ✓",
-      "  shipping_flow.spec    ✓",
-      "",
-      "  100 passed in 14.2s",
-    ],
-    codeColor: "text-slate-300",
+    accentBar: "bg-emerald-500",
+    accentGlow: "hover:shadow-emerald-500/20",
   },
   {
     title: "Best AI Jobs",
@@ -49,6 +34,8 @@ export const projects: Project[] = [
     demo: "https://www.bestaijobs.net/",
     previewBg: "bg-white",
     titleColor: "text-blue-400",
+    accentBar: "bg-blue-500",
+    accentGlow: "hover:shadow-blue-500/20",
   },
   {
     title: "Mr Futon Furniture",
@@ -59,6 +46,8 @@ export const projects: Project[] = [
     demo: "https://www.mrfutonfurniture.com/",
     previewBg: "bg-white",
     titleColor: "text-orange-400",
+    accentBar: "bg-orange-500",
+    accentGlow: "hover:shadow-orange-500/20",
   },
   {
     title: "Paragon Federal Strategies",
@@ -69,6 +58,8 @@ export const projects: Project[] = [
     demo: "https://www.paragonfederalstrategiescorp.com/",
     previewBg: "bg-white",
     titleColor: "text-purple-400",
+    accentBar: "bg-purple-500",
+    accentGlow: "hover:shadow-purple-500/20",
   },
   {
     title: "Salary Calculator",
@@ -79,6 +70,8 @@ export const projects: Project[] = [
     demo: "https://www.salary-calculate.com/",
     previewBg: "bg-white",
     titleColor: "text-rose-400",
+    accentBar: "bg-rose-500",
+    accentGlow: "hover:shadow-rose-500/20",
     codePreview: [
       "$ calculate --location NYC --salary 95000",
       "",
@@ -87,6 +80,6 @@ export const projects: Project[] = [
       "  After-tax:        $67,234 / yr",
       "  Take-home/month:   $5,603",
     ],
-    codeColor: "text-slate-300",
+    codeColor: "text-slate-600",
   },
 ];

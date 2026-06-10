@@ -40,7 +40,7 @@ export default function Hero() {
         className="font-bold"
         style={{ color: "#8eaf8e", fontSize: "1em", paddingTop: "20px" }}
       >
-        I build intelligent testing platforms and automated test suites.
+        I build intelligent testing platforms and automated test cases.
       </p>
     </section>
   );

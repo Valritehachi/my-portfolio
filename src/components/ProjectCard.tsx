@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { Project } from "@/lib/projects";
+import SalaryPreviewAnimation from "./SalaryPreviewAnimation";
 
 export default function ProjectCard({ project }: { project: Project }) {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -57,12 +58,14 @@ export default function ProjectCard({ project }: { project: Project }) {
               {project.demo ?? project.github}
             </span>
           </div>
-          {/* Screenshot preview — falls back to coloured bg if image fails */}
+          {/* Preview — animated for special projects, screenshot otherwise */}
           <div
             className="flex-1 relative overflow-hidden"
             style={{ backgroundColor: project.previewBg }}
           >
-            {project.demo ? (
+            {project.animated ? (
+              <SalaryPreviewAnimation />
+            ) : project.demo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(project.demo)}?w=800`}

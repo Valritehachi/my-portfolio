@@ -6,6 +6,7 @@ export interface Project {
   demo?: string;
   previewBg: string;
   titleColor: string;
+  animated?: boolean;
 }
 
 export const projects: Project[] = [
@@ -58,5 +59,6 @@ export const projects: Project[] = [
     demo: "https://www.salary-calculate.com/",
     previewBg: "#4c0519",
     titleColor: "#fda4af",
+    animated: true,
   },
 ];

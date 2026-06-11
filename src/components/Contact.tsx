@@ -32,7 +32,8 @@ export default function Contact() {
       {/* Download resume */}
       <div className="flex justify-center">
         <a
-          href="#"
+          href="/resume.pdf"
+          download="Valrite-Hamilton-Resume.pdf"
           className="proj-button"
           style={{ fontSize: "1em" }}
         >

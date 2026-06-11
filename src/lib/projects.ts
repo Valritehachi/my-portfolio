@@ -8,6 +8,7 @@ export interface Project {
   titleColor: string;
   animated?: boolean;
   screenshots?: string[];
+  localImage?: string;
 }
 
 export const projects: Project[] = [
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     demo: "https://virtual-qa.vercel.app",
     previewBg: "#064e3b",
     titleColor: "#6ee7b7",
+    localImage: "/virtual-qa-preview.png",
   },
   {
     title: "Mr Futon Furniture",

@@ -66,6 +66,13 @@ export default function ProjectCard({ project }: { project: Project }) {
           >
             {project.screenshots ? (
               <SlideshowPreview urls={project.screenshots} title={project.title} />
+            ) : project.localImage ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={project.localImage}
+                alt={`${project.title} screenshot`}
+                className="w-full h-full object-cover object-top"
+              />
             ) : project.animated ? (
               <>
                 {/* Left half: actual screenshot */}

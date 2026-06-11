@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative h-screen"
-      style={{ paddingTop: "15%", paddingLeft: "6%", paddingRight: "4%" }}
+      style={{ paddingTop: "15%" }}
     >
       {/* "Hi, I'm Valrite" + waving hand */}
       <div className="flex items-start bg-black relative z-10">

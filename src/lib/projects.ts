@@ -53,8 +53,8 @@ export const projects: Project[] = [
     titleColor: "#fdba74",
     screenshots: [
       "https://www.mrfutonfurniture.com/",
-      "https://www.mrfutonfurniture.com/products",
-      "https://www.mrfutonfurniture.com/blog",
+      "https://www.mrfutonfurniture.com/space-savers",
+      "https://www.mrfutonfurniture.com/products/42",
     ],
   },
   {

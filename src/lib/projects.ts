@@ -32,7 +32,7 @@ export const projects: Project[] = [
   {
     title: "Mr Futon Furniture",
     description:
-      "Full e-commerce storefront for a Florida-based furniture retailer specializing in domestically-manufactured futon sofa sleepers. Features a product catalog, local delivery info, and a blog.",
+      "Client project for a Florida-based furniture retailer. The client needed to manage their own content without a developer, so I built a custom Next.js admin panel for content management — letting them update products, delivery info, and blog posts independently. Clean storefront with full CMS capabilities handed off to a non-technical owner.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Valritehachi/mr_futon_furniture",
     demo: "https://www.mrfutonfurniture.com/",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   {
     title: "Paragon Federal Strategies",
     description:
-      "Corporate website for a federal compliance and governance firm. Showcases services including PBM oversight, real-time claims monitoring, audit readiness, and federal contract management.",
+      "Quick turnaround client project for a federal compliance and governance firm. The business needed a professional online presence fast — I delivered a clean corporate site covering their key services: PBM oversight, audit readiness, and federal contract management. Built and shipped on a tight deadline.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Valritehachi/paragon_site",
     demo: "https://www.paragonfederalstrategiescorp.com/",

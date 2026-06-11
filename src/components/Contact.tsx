@@ -6,8 +6,8 @@ export default function Contact() {
       </h2>
 
       <p className="text-white text-center font-bold leading-snug mb-8" style={{ fontSize: "1.3em" }}>
-        Impressed by what you have seen so far?<br />
-        Then contact me via any of the following:
+        Whether you have a project in mind or a job position —<br />
+        my inbox is always open.
       </p>
 
       {/* Icon links */}

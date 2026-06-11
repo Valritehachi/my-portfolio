@@ -9,12 +9,11 @@ export default function About() {
       </h2>
       <p className="text-white leading-relaxed text-justify">
         I&apos;m a QA Automation Engineer with 3+ years of experience building intelligent
-        testing platforms and automated test cases. My journey began with a deep interest
-        in ensuring software quality through systematic, repeatable processes. Over time I
-        built expertise in Playwright, PyTest, and AI-driven testing frameworks — delivering
-        250+ test cases with 95% coverage and reducing validation time by 60%. I have worked
-        across cloud environments and collaborated with cross-functional teams to ship reliable
-        software at scale.
+        testing platforms and automated test cases. I was part of the team that built a test
+        runner for a large organization, and later created my own fully functional runner from
+        scratch — making the testing process simpler and more efficient for the whole team.
+        Over time I built deep expertise in Playwright, PyTest, and AI-driven testing frameworks,
+        delivering 250+ test cases with 95% coverage and reducing validation time by 60%.
       </p>
     </div>
   );

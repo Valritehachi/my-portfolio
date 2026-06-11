@@ -51,17 +51,17 @@ export default function Sidebar() {
 
         {/* Name & title */}
         <div className="text-center mb-4">
-          <p className="text-white font-bold text-sm tracking-wider m-0">
+          <p className="text-white font-bold text-base tracking-wider m-0">
             VALRITE HAMILTON
           </p>
-          <p className="text-xs font-semibold mt-1 m-0" style={{ color: "#8eaf8e" }}>
+          <p className="text-sm font-semibold mt-1 m-0" style={{ color: "#8eaf8e" }}>
             QA Automation Engineer
           </p>
         </div>
 
         {/* Nav links */}
         <nav style={{ marginTop: "10%" }}>
-          <ul className="list-none p-0 m-0 font-bold text-lg">
+          <ul className="list-none p-0 m-0 font-bold text-2xl">
             {links.map(({ href, label }) => (
               <li key={href} className="pb-4">
                 <Link
@@ -78,7 +78,7 @@ export default function Sidebar() {
         </nav>
 
         {/* Social icons */}
-        <div className="mt-auto pt-6 flex gap-5">
+        <div className="mt-16 pt-4 flex gap-5">
           <a
             href="mailto:valritehachi@gmail.com"
             className="hover:text-white transition-colors duration-200"

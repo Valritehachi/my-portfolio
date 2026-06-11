@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { Project } from "@/lib/projects";
 import SalaryPreviewAnimation from "./SalaryPreviewAnimation";
+import SlideshowPreview from "./SlideshowPreview";
 
 export default function ProjectCard({ project }: { project: Project }) {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -63,7 +64,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             className="flex-1 relative overflow-hidden flex"
             style={{ backgroundColor: project.previewBg }}
           >
-            {project.animated ? (
+            {project.screenshots ? (
+              <SlideshowPreview urls={project.screenshots} title={project.title} />
+            ) : project.animated ? (
               <>
                 {/* Left half: actual screenshot */}
                 <div className="w-1/2 h-full overflow-hidden" style={{ borderRight: "1px solid rgba(255,255,255,0.1)" }}>

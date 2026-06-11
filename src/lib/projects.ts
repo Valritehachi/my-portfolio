@@ -7,6 +7,7 @@ export interface Project {
   previewBg: string;
   titleColor: string;
   animated?: boolean;
+  screenshots?: string[];
 }
 
 export const projects: Project[] = [
@@ -19,6 +20,17 @@ export const projects: Project[] = [
     demo: "https://virtual-qa.vercel.app",
     previewBg: "#064e3b",
     titleColor: "#6ee7b7",
+  },
+  {
+    title: "Salary Calculator",
+    description:
+      "A comprehensive suite of salary tools — calculate after-tax take-home pay, convert salary to hourly, compare job offers, and analyze cost-of-living differences across U.S. cities.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Valritehachi/salary-calculator",
+    demo: "https://www.salary-calculate.com/",
+    previewBg: "#4c0519",
+    titleColor: "#fda4af",
+    animated: true,
   },
   {
     title: "Best AI Jobs",
@@ -39,6 +51,11 @@ export const projects: Project[] = [
     demo: "https://www.mrfutonfurniture.com/",
     previewBg: "#431407",
     titleColor: "#fdba74",
+    screenshots: [
+      "https://www.mrfutonfurniture.com/",
+      "https://www.mrfutonfurniture.com/products",
+      "https://www.mrfutonfurniture.com/blog",
+    ],
   },
   {
     title: "Paragon Federal Strategies",
@@ -49,16 +66,5 @@ export const projects: Project[] = [
     demo: "https://www.paragonfederalstrategiescorp.com/",
     previewBg: "#2e1065",
     titleColor: "#d8b4fe",
-  },
-  {
-    title: "Salary Calculator",
-    description:
-      "A comprehensive suite of salary tools — calculate after-tax take-home pay, convert salary to hourly, compare job offers, and analyze cost-of-living differences across U.S. cities.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/Valritehachi/salary-calculator",
-    demo: "https://www.salary-calculate.com/",
-    previewBg: "#4c0519",
-    titleColor: "#fda4af",
-    animated: true,
   },
 ];

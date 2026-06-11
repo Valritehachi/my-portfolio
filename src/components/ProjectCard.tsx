@@ -57,17 +57,25 @@ export default function ProjectCard({ project }: { project: Project }) {
               {project.demo ?? project.github}
             </span>
           </div>
-          {/* Coloured preview area */}
+          {/* Screenshot preview — falls back to coloured bg if image fails */}
           <div
-            className="flex-1 flex items-center justify-center"
+            className="flex-1 relative overflow-hidden"
             style={{ backgroundColor: project.previewBg }}
           >
-            <span
-              className="font-bold text-2xl text-center px-6"
-              style={{ color: project.titleColor }}
-            >
-              {project.title}
-            </span>
+            {project.demo ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(project.demo)}?w=800`}
+                alt={`${project.title} screenshot`}
+                className="w-full h-full object-cover object-top"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="font-bold text-2xl text-center px-6" style={{ color: project.titleColor }}>
+                  {project.title}
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </div>

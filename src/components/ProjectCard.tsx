@@ -58,13 +58,27 @@ export default function ProjectCard({ project }: { project: Project }) {
               {project.demo ?? project.github}
             </span>
           </div>
-          {/* Preview — animated for special projects, screenshot otherwise */}
+          {/* Preview — split view for animated projects, screenshot otherwise */}
           <div
-            className="flex-1 relative overflow-hidden"
+            className="flex-1 relative overflow-hidden flex"
             style={{ backgroundColor: project.previewBg }}
           >
             {project.animated ? (
-              <SalaryPreviewAnimation />
+              <>
+                {/* Left half: actual screenshot */}
+                <div className="w-1/2 h-full overflow-hidden" style={{ borderRight: "1px solid rgba(255,255,255,0.1)" }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(project.demo ?? "")}?w=400`}
+                    alt={`${project.title} screenshot`}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Right half: animated counter */}
+                <div className="w-1/2 h-full">
+                  <SalaryPreviewAnimation />
+                </div>
+              </>
             ) : project.demo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img

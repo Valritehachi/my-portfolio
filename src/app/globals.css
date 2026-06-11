@@ -94,6 +94,40 @@ body {
   color: #4ade80;
 }
 
+/* Horizontal project card animations */
+.proj-animate-left {
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+.proj-animate-right {
+  transform: translateX(80px);
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+.proj-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Pill button used on project cards */
+.proj-button {
+  display: inline-block;
+  border: 1px solid #8eaf8e;
+  border-radius: 30px;
+  color: #8eaf8e;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.proj-button:hover {
+  background: #8eaf8e;
+  color: #000;
+}
+
 .blob {
   animation: float 8s ease-in-out infinite;
 }

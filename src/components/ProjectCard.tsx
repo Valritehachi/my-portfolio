@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div
         ref={leftRef}
         className="proj-animate-left flex-shrink-0"
-        style={{ width: "55%", height: "300px" }}
+        style={{ width: "55%", height: "360px" }}
       >
         <div
           className="w-full h-full flex flex-col overflow-hidden"

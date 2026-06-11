@@ -22,8 +22,8 @@ export default function SlideshowPreview({ urls, title }: { urls: string[]; titl
       <img
         src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(urls[idx])}?w=800`}
         alt={`${title} screenshot`}
-        className="w-full h-full object-cover object-top"
-        style={{ transition: "opacity 0.35s ease-in-out", opacity: visible ? 1 : 0 }}
+        className="w-full h-full object-cover"
+        style={{ objectPosition: "50% 0%", transition: "opacity 0.35s ease-in-out", opacity: visible ? 1 : 0 }}
       />
       {/* Dot indicators */}
       <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">

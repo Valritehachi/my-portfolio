@@ -22,6 +22,21 @@ export const projects: Project[] = [
     titleColor: "#6ee7b7",
   },
   {
+    title: "Mr Futon Furniture",
+    description:
+      "Client project for a Florida-based furniture retailer. The client needed to manage their own content without a developer, so I built a custom Next.js admin panel for content management — letting them update products, delivery info, and blog posts independently. Clean storefront with full CMS capabilities handed off to a non-technical owner.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Valritehachi/mr_futon_furniture",
+    demo: "https://www.mrfutonfurniture.com/",
+    previewBg: "#431407",
+    titleColor: "#fdba74",
+    screenshots: [
+      "https://www.mrfutonfurniture.com/",
+      "https://www.mrfutonfurniture.com/space-savers",
+      "https://www.mrfutonfurniture.com/products/42",
+    ],
+  },
+  {
     title: "Salary Calculator",
     description:
       "A comprehensive suite of salary tools — calculate after-tax take-home pay, convert salary to hourly, compare job offers, and analyze cost-of-living differences across U.S. cities.",
@@ -41,21 +56,6 @@ export const projects: Project[] = [
     demo: "https://www.bestaijobs.net/",
     previewBg: "#1e3a5f",
     titleColor: "#93c5fd",
-  },
-  {
-    title: "Mr Futon Furniture",
-    description:
-      "Client project for a Florida-based furniture retailer. The client needed to manage their own content without a developer, so I built a custom Next.js admin panel for content management — letting them update products, delivery info, and blog posts independently. Clean storefront with full CMS capabilities handed off to a non-technical owner.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/Valritehachi/mr_futon_furniture",
-    demo: "https://www.mrfutonfurniture.com/",
-    previewBg: "#431407",
-    titleColor: "#fdba74",
-    screenshots: [
-      "https://www.mrfutonfurniture.com/",
-      "https://www.mrfutonfurniture.com/space-savers",
-      "https://www.mrfutonfurniture.com/products/42",
-    ],
   },
   {
     title: "Paragon Federal Strategies",

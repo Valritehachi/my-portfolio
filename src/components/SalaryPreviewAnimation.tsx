@@ -40,7 +40,7 @@ export default function SalaryPreviewAnimation() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIdx((i) => (i + 1) % scenarios.length);
-    }, 2800);
+    }, 1500);
     return () => clearInterval(interval);
   }, []);
 

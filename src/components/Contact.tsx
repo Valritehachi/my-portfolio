@@ -32,14 +32,6 @@ export default function Contact() {
           >
             LinkedIn
           </a>
-          <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 hover:text-fuchsia-400 text-sm transition-colors duration-200"
-          >
-            Twitter
-          </a>
         </div>
       </div>
     </section>

@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Sidebar />
         <div className="content-right">
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 content-inner">{children}</main>
           <Footer />
         </div>
       </body>

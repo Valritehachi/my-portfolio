@@ -56,13 +56,14 @@ export const projects: Project[] = [
     titleColor: "#93c5fd",
   },
   {
-    title: "Paragon Federal Strategies",
+    title: "BOSA Newsletter",
     description:
-      "Quick turnaround client project for a federal compliance and governance firm. The business needed a professional online presence fast — I delivered a clean corporate site covering their key services: PBM oversight, audit readiness, and federal contract management. Built and shipped on a tight deadline.",
+      "Client project for a nonprofit newsletter organization. Built a full-stack publishing platform with a custom CMS — allowing the client to create, edit, and manage 80+ articles independently. Features a rich text editor, category filtering, image uploads, and an admin dashboard. Handed off to a non-technical owner.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/Valritehachi/paragon_site",
-    demo: "https://www.paragonfederalstrategiescorp.com/",
-    previewBg: "#2e1065",
-    titleColor: "#d8b4fe",
+    github: "https://github.com/Valritehachi/bosa-newsletter",
+    demo: "https://bosaonline.org",
+    previewBg: "#1e3a8a",
+    titleColor: "#93c5fd",
+    localImage: "/bosa_1.png",
   },
 ];

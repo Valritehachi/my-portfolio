@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     title: "Virtual QA Platform",
     description:
-      "Cloud-based testing platform that accelerates QA workflows by supporting both no-code and automated testing. Used Claude API to auto-generate test cases from plain language descriptions. Executed tests concurrently on AWS Lambda with real-time monitoring, screenshot capture, and log streaming. Reduced manual test creation time by 75%.",
+      "Built a cloud-based QA platform that helps teams create and run automated tests faster using Playwright, AWS Lambda, and AI-generated no-code test cases. Features include real-time monitoring, screenshot capture, video recordings, and live log streaming, significantly reducing the time required to create and execute tests.",
     tech: ["Next.js", "React", "TypeScript", "Playwright", "AWS Lambda", "Claude API"],
     github: "https://github.com/Valritehachi/virtual-qa",
     demo: "https://virtual-qa.vercel.app",

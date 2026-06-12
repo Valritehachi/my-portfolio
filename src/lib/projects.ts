@@ -26,17 +26,13 @@ export const projects: Project[] = [
   {
     title: "Mr Futon Furniture",
     description:
-      "Client project for a Florida-based furniture retailer. The client needed to manage their own content without a developer, so I built a custom Next.js admin panel for content management — letting them update products, delivery info, and blog posts independently. Clean storefront with full CMS capabilities handed off to a non-technical owner.",
+      "Client project for a Florida-based furniture retailer. The client needed to manage their own content without a developer, so I built a custom Next.js admin panel for content management — letting them update products, delivery info, and blog posts independently. Clean storefront with full CMS capabilities handed to a non-technical owner.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Valritehachi/mr_futon_furniture",
     demo: "https://www.mrfutonfurniture.com/",
     previewBg: "#431407",
     titleColor: "#fdba74",
-    screenshots: [
-      "https://www.mrfutonfurniture.com/",
-      "https://www.mrfutonfurniture.com/space-savers",
-      "https://www.mrfutonfurniture.com/products/42",
-    ],
+    screenshots: ["/futon_1.png", "/futon_2.png"],
   },
   {
     title: "Salary Calculator",

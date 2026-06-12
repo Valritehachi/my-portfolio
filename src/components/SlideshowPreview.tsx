@@ -20,7 +20,7 @@ export default function SlideshowPreview({ urls, title }: { urls: string[]; titl
     <div className="w-full h-full relative overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(urls[idx])}?w=800`}
+        src={urls[idx].startsWith("/") ? urls[idx] : `https://s0.wp.com/mshots/v1/${encodeURIComponent(urls[idx])}?w=800`}
         alt={`${title} screenshot`}
         className="w-full h-full object-cover"
         style={{ objectPosition: "50% 0%", transition: "opacity 0.35s ease-in-out", opacity: visible ? 1 : 0 }}
